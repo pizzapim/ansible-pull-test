@@ -1,0 +1,9 @@
+- hosts: localhost
+  connection: local
+
+  tasks:
+    - name: ensure file exists
+      copy:
+        content: ""
+        dest: ~/testje.txt
+        force: false
